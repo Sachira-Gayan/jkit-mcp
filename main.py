@@ -3,6 +3,9 @@ import httpx
 from config import header
 app = FastMCP("http-client-server")
 
+
+
+
 # ------------------------------
 # HTTP GET Tool
 # ------------------------------
@@ -13,7 +16,7 @@ async def http_get(url: str) -> str:
     """
     async with httpx.AsyncClient() as client:
         response = await client.get(url)
-        response.raise_for_status()
+        # response.raise_for_status()
         return response.text
 
 
