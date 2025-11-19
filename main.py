@@ -1,6 +1,5 @@
 from fastmcp import FastMCP
 import httpx
-import requests
 from config import header
 app = FastMCP("http-client-server",stateless_http=True)
 
